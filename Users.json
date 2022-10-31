@@ -1,0 +1,171 @@
+[
+  {
+    "FirstName": "Sean",
+    "LastName": "Kagwa",
+    "ID": "661177",
+    "email": "gacherusean@gmail.com",
+    "password": "12",
+    "role": [
+      "STUDENT ",
+      "LECTURER"
+    ],
+    "courses": [
+      "APT 2055",
+      "APT2010"
+    ],
+    "lec_courses": "app4035"
+  },
+  {
+    "FirstName": "Arnold",
+    "LastName": "Aijuka",
+    "ID": "657734",
+    "email": "arnoldaijuka@gmail.com",
+    "password": "12",
+    "role": [
+      "STUDENT ",
+      "LECTURER"
+    ],
+    "courses": [
+      "APT2010",
+      "app4035"
+    ],
+    "lec_courses": "APT 2055"
+  },
+  {
+    "FirstName": "Shawn",
+    "LastName": "Kinyanjui",
+    "ID": "114466",
+    "email": "sh@gmail.com",
+    "password": "12",
+    "role": [
+      "STUDENT ",
+      "LECTURER"
+    ],
+    "courses": [
+      "APT 2055",
+      "APT2010",
+      "apt 3050"
+    ],
+    "lec_courses": [
+      "app4035",
+      "net4050",
+      "apt 2030"
+    ]
+  },
+  {
+    "FirstName": "User",
+    "LastName": "Two",
+    "ID": "887722",
+    "email": "user@gmail.com",
+    "password": "900",
+    "role": [
+      "STUDENT ",
+      "LECTURER"
+    ],
+    "courses": [
+      "APT 2055",
+      "APT2010"
+    ],
+    "lec_courses": "app4035"
+  },
+  {
+    "FirstName": "Charles",
+    "LastName": "Johnson",
+    "ID": "992244",
+    "email": "ch@gmail.com",
+    "password": "5689",
+    "role": "LECTURER",
+    "lec_courses": [
+      "APT 2055",
+      "APT2010",
+      "app4035"
+    ]
+  },
+  {
+    "FirstName": "Michael",
+    "LastName": "Johnson",
+    "ID": "980999",
+    "email": "mike@gmail.com",
+    "password": "980",
+    "role": "STUDENT ",
+    "courses": [
+      "APT 2055",
+      "APT2010",
+      "app4035"
+    ]
+  },
+  {
+    "FirstName": "John",
+    "LastName": "Marston",
+    "ID": "665511",
+    "email": "jm@gmail.com",
+    "password": "j0hn",
+    "role": "LECTURER",
+    "lec_courses": [
+      "APT 2055",
+      "app4035",
+      "net4050"
+    ]
+  },
+  {
+    "FirstName": "Janet",
+    "LastName": "Marston",
+    "ID": "889977",
+    "email": "jan@gmail.com",
+    "password": "jsnjsn",
+    "role": "STUDENT ",
+    "courses": [
+      "APT 2055",
+      "APT2010",
+      "app4035",
+      "net4050",
+      "apt 2030",
+      "apt 3050"
+    ]
+  },
+  {
+    "FirstName": "Muad",
+    "LastName": "Malim",
+    "ID": "641122",
+    "email": "mm@gmail.com",
+    "password": "12",
+    "role": [
+      "STUDENT ",
+      "LECTURER"
+    ],
+    "courses": [
+      "APT 2055",
+      "APT2010"
+    ],
+    "lec_courses": [
+      "APT 2055",
+      "APT2010"
+    ]
+  },
+  {
+    "FirstName": "jef",
+    "LastName": "john",
+    "ID": "6677788",
+    "email": "jj@gmail.com",
+    "password": "123",
+    "role": "STUDENT ",
+    "courses": [
+      "APT 2055",
+      "APT2010",
+      "app4035"
+    ]
+  },
+  {
+    "FirstName": "Paula ",
+    "LastName": "musuva",
+    "ID": "1145667",
+    "email": "pm@gmail.com",
+    "password": "12",
+    "role": "LECTURER",
+    "lec_courses": [
+      "APT2010",
+      "net4050",
+      "fic4030"
+    ]
+  }
+]

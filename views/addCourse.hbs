@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Add Courses </title>
+        <link rel="stylesheet" href="css/index.css">
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+         </head>
+    <body background="img/login.jpg">
+<nav class="navbar navbar-expand-md navbar-dark" style="background-color: #202020;">
+  <a class="navbar-brand" href="#">Group 7 LMS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/add">Add Users</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/course-form">Add Courses</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/read-saved">View Users  </a>
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/readCourse">View Courses</a>
+      </li>
+      <li class="nav-item">
+        
+        <a class="btn btn-dark btn-lg" style="margin:auto;" href="/">Logout</a>
+      
+      </li>
+    </ul>
+  </div>  
+</nav>
+ 
+        <div class="p-4 w-25 mb-2 bg-light fromgroup ">
+        <div class="c">
+          <center><img src="img/logo.jpg"></center>
+        <p> Welcome. Please insert the details below to add a course.</p>
+        <form action="/courses-saved" method="POST">
+            Course ID: <input type="text"class="form-control"   placeholder="e.g. APT 1020" id="courseID" name="CourseID"  />
+            <br><br>
+            Course Name: <input type ="text"class="form-control"   placeholder="Introduction to programming" id="courseName" name="CourseName"/>
+            <br><br>
+            Course Description: <textarea type="text" class="form-control"  id="exampleFormControlTextarea1" rows="3" placeholder="learning beginner and fundermental concepts on programming in c++" id="courseDesc" name="CourseDescription"></textarea>
+            
+            <br><br>
+            <center><button type="submit" class="btn btn-dark btn-lg">Add the new course</button></center>
+           
+            
+        </form>
+        </div>
+        </div>
+
+    </body>
+</html>

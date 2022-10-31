@@ -1,0 +1,59 @@
+
+
+
+#form{
+    size: 20px;
+    color: azure;
+   }
+   #res{
+       color: azure;
+   }
+   
+   .p-3{
+       
+       
+       margin-top: 15%; 
+       position: relative;
+       border-radius: 5%;
+       margin-left: 36%; 
+       
+       
+   }
+   .p-4{
+       
+       
+    margin-top: 5%; 
+    position: relative;
+    border-radius: 5%;
+    margin-left: 36%; 
+    
+    
+}
+.p-5{
+       
+     
+    margin-top: 5%; 
+    position: relative;
+    border-radius: 5%;
+    margin-left: 36%; 
+    
+    
+}
+   .navbar-nav {
+       margin-left: auto;
+   }
+   .container{
+       height: auto;
+      
+       color: azure;
+       border-radius: 3%;
+       border: 0px;
+   
+      
+   }
+   .bg-image {
+       /* The image used */
+       background-image: url("login.jpg");
+     
+       
+     }

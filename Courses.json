@@ -1,0 +1,37 @@
+[
+  {
+    "CourseID": "APT 2055",
+    "CourseName": "Hardware and Software Practicum",
+    "CourseDescription": "Arduino"
+  },
+  {
+    "CourseID": "APT2010",
+    "CourseName": "System analysis and desigm",
+    "CourseDescription": "learn about use cases,  developmental digram  ad well as the entire system development life cycle"
+  },
+  {
+    "CourseID": "app4035",
+    "CourseName": "Advanced web frameworks",
+    "CourseDescription": " Learning about  backend , front end and  css frameworks focussing mainly on  REact and React principles such as pure functions and dynamic code"
+  },
+  {
+    "CourseID": "net4050",
+    "CourseName": "Network sensors and iot",
+    "CourseDescription": " Learning about diffrent sensors a nd how they can be applicable in sensor network and industrial enviroment "
+  },
+  {
+    "CourseID": "apt 2030",
+    "CourseName": "Digital Electronics",
+    "CourseDescription": "This course covers the use of logic gates and their implementation in systems"
+  },
+  {
+    "CourseID": "apt 3050",
+    "CourseName": "Introduction to Software Engineering",
+    "CourseDescription": "This course introduces students to the basics of software engineering"
+  },
+  {
+    "CourseID": "fic4030",
+    "CourseName": "auditing",
+    "CourseDescription": "Auditing techniques on computer networks and other methods of security"
+  }
+]

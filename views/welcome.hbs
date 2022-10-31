@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body onload="fetchCourses()" background="img/login.jpg">
+        <nav class="navbar navbar-expand-md bg- navbar-dark" style="background-color: #202020;">
+  <a class="navbar-brand" href="#">Group 7 LMS</a>
+  <a  style="color: #ffffff;"> <center> {{persona.name}} {{persona.lname}}  </center></a>
+     
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      
+      <li class="nav-item" >
+        <a class="btn btn-dark btn-lg"  href="/logout">Logout</a>
+      </li>
+    </ul>
+   
+    
+  </div>  
+</nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+        <!-- need to find a way to make the name be displayed here if login is success-->
+  <div  class="container" style="background-color: #202020;">
+
+ <center><b> Welcome Back , </b> </center>
+ <br>
+ <center><b>{{persona.name}} {{persona.lname}}  {{persona.id }}</b> </center>
+ <br>
+ <center><p> <b>Your Email :{{persona.email}} </b> </p></center>
+<p id="2" hidden>{{persona.courseD }}</p> 
+<p id="3" hidden>{{persona.courselec}}</p> 
+ <!--<p>You are a{{persona.role}}  </p>-->
+ <script>
+    let array=[];
+    let array2=[];
+     let  test = document.getElementById("2");
+      let  test2 = document.getElementById("3");
+     let ref =test.textContent;
+     let ref2 =test2.textContent;
+     
+       array= ref.split(','); 
+       array2= ref2.split(',');
+
+     console.log(array2);
+     console.log("test is :");
+     console.log(ref);
+
+
+   const server = 'http://localhost:3000';
+
+var len = null;
+
+var c_store = [];
+let courses = [];
+var access = [];
+
+async function fetchCourses(){
+   const url = server + '/stored-data';
+   const response = await fetch(url, {method: 'GET'});
+   const results = await response.text();
+   let data = JSON.parse(results);
+
+   for (var i = 0; i < data.length; i++) {
+       access.push(data[i]);
+   }
+    console.log('se');
+   const urlTwo = server + '/stored-course';
+   const responseTwo = await fetch(urlTwo, {method: 'GET'});
+   const resultsTwo = await responseTwo.text();
+   let dataTwo = JSON.parse(resultsTwo);
+
+   
+   for (var i = 0; i < dataTwo.length; i++) {
+       
+       courses.push(dataTwo[i]);
+   }
+   
+   console.log(access);
+   console.log(access[0].role[1]);
+   Coursetable(courses , access, array ,array2);
+
+}
+
+function Coursetable(results , coursecode ,reference ,reference2){
+   
+   var list = document.getElementById('COURSES');
+   //Create Table
+   let text = `<table class = "table">
+   <thead>
+       <tr>
+           <th>CourseID</th>
+           <th>CourseName</th>
+           <th>Course Description</th>
+           <th>Role</th>
+
+           
+       </tr>
+   </thead>
+   <tbody>`;
+   //Populate Table for student choice
+   for(let y =0 ; y<reference.length ;y++){
+   for (let i = 0; i < results.length; i++) {
+       console.log(reference[y]);
+       if(results[i].CourseID== reference[y] )
+       {
+       text += "<tr><td>" + results[i].CourseID + "</td>";
+       text += "<td>" + results[i].CourseName + "</td>";
+       text += "<td>" + results[i].CourseDescription+ "</td>";
+       text += "<td>" + "Student" + "</td>";
+       
+       }
+   }
+   }
+   for(let y=0; y<reference2.length;y++)
+   {
+     for(let i=0; i<results.length; i++)
+     {
+       if(results[i].CourseID== reference2[y] )
+       {
+       text += "<tr><td>" + results[i].CourseID + "</td>";
+       text += "<td>" + results[i].CourseName + "</td>";
+       text += "<td>" + results[i].CourseDescription+ "</td>";
+       text += "<td>" + "Lecturer" + "</td>";
+       
+       } 
+     }
+   }
+   
+   
+   text += "</tbody></table>";
+
+   list.innerHTML = text;
+
+}
+
+    </script> 
+
+  <div id="COURSES" class="container" style="background-color: #202020;"  style=" border: 0px;">
+  </div>
+  </div>
+    </body>
+
+  
+</html>
